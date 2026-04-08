@@ -3,20 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nishanth P | Portfolio</title>
+  <title>Nishanth P | Full-Stack Developer & AI Automation Architect</title>
   <meta name="description" content="Portfolio of Nishanth P — Full-Stack Developer and AI Automation Architect based in Coimbatore." />
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-
   <link rel="icon" href="https://fav.farm/⚡" />
 </head>
 <body>
@@ -26,7 +19,7 @@
   ══════════════════════════════════════════════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-brand">
-      Nishanth P <span class="sep">/</span> <span>Portfolio</span>
+      Nishanth P <span class="sep">/</span> <span class="brand-accent">Portfolio</span>
     </div>
 
     <ul class="nav-links" id="navLinks">
@@ -40,7 +33,6 @@
 
     <div class="nav-right">
       <div class="btn-available">Available to Work</div>
-
       <div class="nav-socials">
         <a href="https://www.linkedin.com/in/nishanth0427/" target="_blank" class="nav-social-link" title="LinkedIn">
           <i class="fab fa-linkedin-in"></i>
@@ -52,7 +44,6 @@
           <i class="fas fa-code"></i>
         </a>
       </div>
-
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -63,38 +54,49 @@
        HERO / HOME
   ══════════════════════════════════════════════ -->
   <section id="home">
-    <div class="container" style="text-align:center;">
+    <div class="hero-inner">
 
-      <div class="hero-label">
-        <i class="fas fa-circle" style="font-size:0.5rem;"></i>
-        CS Student @ Sri Krishna College of Technology
-      </div>
+      <!-- Left: Text -->
+      <div class="hero-content">
+        <div class="hero-label">
+          <i class="fas fa-circle" style="font-size:0.45rem;"></i>
+          CS Student @ Sri Krishna College of Technology
+        </div>
 
-      <h1 class="hero-name">
-        NISHANTH <span class="accent">P</span>
-      </h1>
+        <h1 class="hero-name">NISHANTH <span class="accent">P</span></h1>
 
-      <div class="hero-titles">
-        <div class="hero-title-item">
-          Full Stack Developer
-          <span class="dot"></span>
-          AI Automation Architect
+        <div class="hero-titles">
+          <div class="hero-title-item">
+            Full Stack Developer
+            <span class="dot"></span>
+            AI Automation Architect
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary-custom">
+            <i class="fas fa-rocket"></i> View My Latest Work
+          </a>
+          <a href="/static/Nishanth_Resume.pdf" download class="btn-outline-custom">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn-outline-custom">
+            <i class="fas fa-paper-plane"></i> Let's Talk
+          </a>
         </div>
       </div>
 
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary-custom">
-          <i class="fas fa-rocket"></i>
-          View My Latest Work
-        </a>
-        <a href="/static/Nishanth_Resume.pdf" download class="btn-outline-custom">
-          <i class="fas fa-download"></i>
-          Download Resume
-        </a>
-        <a href="#contact" class="btn-outline-custom">
-          <i class="fas fa-paper-plane"></i>
-          Let's Talk
-        </a>
+      <!-- Right: Avatar -->
+      <div class="hero-avatar-wrap">
+        <div class="avatar-ring">
+          <div class="avatar-ring-inner"></div>
+          <img
+            src="{{ url_for('static', filename='nishanth_pfp.jpeg') }}"
+            alt="Nishanth P"
+            class="avatar-img"
+          />
+          <div class="avatar-badge">Open to Work</div>
+        </div>
       </div>
 
     </div>
@@ -110,24 +112,9 @@
         <div class="about-text fade-up">
           <div class="section-tag">// about me</div>
           <h2 class="section-title">Who Am I?</h2>
-
-          <p>
-            I'm <strong>Nishanth P</strong>, a passionate 3rd-year Computer Science student at
-            <strong>Sri Krishna College of Technology, Coimbatore</strong>. I build things that
-            live at the intersection of clean code and intelligent automation.
-          </p>
-          <p>
-            My expertise spans full-stack web development with Python & Flask on the backend,
-            and modern, responsive frontends. Beyond traditional development, I architect
-            AI-powered automation workflows using tools like Make.com — turning repetitive
-            processes into smart, self-running systems.
-          </p>
-          <p>
-            I'm actively exploring the frontiers of Large Language Models, API design, and
-            cloud-native architectures. I'm currently open to freelance projects and internship
-            opportunities where I can bring real impact through code and automation.
-          </p>
-
+          <p>I'm <strong>Nishanth P</strong>, a passionate 3rd-year Computer Science student at <strong>Sri Krishna College of Technology, Coimbatore</strong>. I build things that live at the intersection of clean code and intelligent automation.</p>
+          <p>My expertise spans full-stack web development with Python &amp; Flask on the backend, and modern, responsive frontends. Beyond traditional development, I architect AI-powered automation workflows using tools like Make.com — turning repetitive processes into smart, self-running systems.</p>
+          <p>I'm actively exploring the frontiers of Large Language Models, API design, and cloud-native architectures. Currently open to freelance projects and internship opportunities where I can bring real impact through code and automation.</p>
           <div class="about-quote">
             <p>"The best automation is the one that makes you forget it was ever manual."</p>
             <cite>— Nishanth P's Engineering Philosophy</cite>
@@ -169,8 +156,6 @@
       </div>
 
       <div class="academic-cards">
-
-        <!-- Card 1 -->
         <div class="academic-card fade-up" style="transition-delay:0.05s">
           <div class="academic-icon">🎓</div>
           <div class="academic-body">
@@ -181,7 +166,6 @@
           <div class="academic-badge">2023 – Present</div>
         </div>
 
-        <!-- Card 2 -->
         <div class="academic-card fade-up" style="transition-delay:0.12s">
           <div class="academic-icon">⚡</div>
           <div class="academic-body">
@@ -192,7 +176,6 @@
           <div class="academic-badge">2024 – Present</div>
         </div>
 
-        <!-- Card 3 -->
         <div class="academic-card fade-up" style="transition-delay:0.2s">
           <div class="academic-icon">📚</div>
           <div class="academic-body">
@@ -202,7 +185,6 @@
           </div>
           <div class="academic-badge">2021 – 2023</div>
         </div>
-
       </div>
     </div>
   </section>
@@ -219,43 +201,33 @@
       </div>
 
       <div class="service-grid">
-
         <div class="service-card fade-up" style="transition-delay:0.05s">
           <div class="service-icon">🌐</div>
           <h3>Web Development</h3>
           <p>I build clean, fast, and scalable web applications — from sleek landing pages to full-featured dashboards. My stack covers Python/Flask on the backend with responsive, modern frontends that feel great on every device.</p>
-          <a href="#contact" class="service-cta">
-            Start a Project <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
-          </a>
+          <a href="#contact" class="service-cta">Start a Project <i class="fas fa-arrow-right" style="font-size:0.72rem;"></i></a>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.12s">
           <div class="service-icon">🤖</div>
           <h3>AI Automation</h3>
           <p>I design and deploy intelligent automation workflows using Make.com, webhooks, and AI APIs. Whether it's automating lead capture, email pipelines, or data processing — I make your business work smarter, not harder.</p>
-          <a href="#contact" class="service-cta">
-            Automate Now <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
-          </a>
+          <a href="#contact" class="service-cta">Automate Now <i class="fas fa-arrow-right" style="font-size:0.72rem;"></i></a>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.2s">
           <div class="service-icon">🔗</div>
           <h3>API Integration</h3>
           <p>I connect the dots between services — building robust webhook bridges and API architectures that keep your tools talking to each other seamlessly. Think of me as the glue between your SaaS tools.</p>
-          <a href="#contact" class="service-cta">
-            Let's Integrate <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
-          </a>
+          <a href="#contact" class="service-cta">Let's Integrate <i class="fas fa-arrow-right" style="font-size:0.72rem;"></i></a>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.28s">
           <div class="service-icon">💼</div>
           <h3>Freelance Collaboration</h3>
           <p>Open to freelance projects and short-term collaborations. Whether you're a startup looking for a first MVP or a business wanting to automate a workflow — let's connect and bring your vision to life.</p>
-          <a href="#contact" class="service-cta">
-            Collaborate <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
-          </a>
+          <a href="#contact" class="service-cta">Collaborate <i class="fas fa-arrow-right" style="font-size:0.72rem;"></i></a>
         </div>
-
       </div>
     </div>
   </section>
@@ -272,12 +244,8 @@
       </div>
 
       <div class="skills-grid">
-
         <div class="skill-card fade-up" style="transition-delay:0.05s">
-          <div class="skill-card-header">
-            <span class="skill-card-icon">⚙️</span>
-            <h4>Automation</h4>
-          </div>
+          <div class="skill-card-header"><span class="skill-card-icon">⚙️</span><h4>Automation</h4></div>
           <div class="skill-divider"></div>
           <div class="skill-tags">
             <span class="skill-tag">Make.com</span>
@@ -289,10 +257,7 @@
         </div>
 
         <div class="skill-card fade-up" style="transition-delay:0.1s">
-          <div class="skill-card-header">
-            <span class="skill-card-icon">🐍</span>
-            <h4>Backend</h4>
-          </div>
+          <div class="skill-card-header"><span class="skill-card-icon">🐍</span><h4>Backend</h4></div>
           <div class="skill-divider"></div>
           <div class="skill-tags">
             <span class="skill-tag">Python</span>
@@ -305,10 +270,7 @@
         </div>
 
         <div class="skill-card fade-up" style="transition-delay:0.15s">
-          <div class="skill-card-header">
-            <span class="skill-card-icon">🎨</span>
-            <h4>Frontend</h4>
-          </div>
+          <div class="skill-card-header"><span class="skill-card-icon">🎨</span><h4>Frontend</h4></div>
           <div class="skill-divider"></div>
           <div class="skill-tags">
             <span class="skill-tag">HTML5</span>
@@ -320,10 +282,7 @@
         </div>
 
         <div class="skill-card fade-up" style="transition-delay:0.2s">
-          <div class="skill-card-header">
-            <span class="skill-card-icon">🤖</span>
-            <h4>AI &amp; LLMs</h4>
-          </div>
+          <div class="skill-card-header"><span class="skill-card-icon">🤖</span><h4>AI &amp; LLMs</h4></div>
           <div class="skill-divider"></div>
           <div class="skill-tags">
             <span class="skill-tag">Prompt Engineering</span>
@@ -334,10 +293,7 @@
         </div>
 
         <div class="skill-card fade-up" style="transition-delay:0.25s">
-          <div class="skill-card-header">
-            <span class="skill-card-icon">🛠️</span>
-            <h4>Tools &amp; Platforms</h4>
-          </div>
+          <div class="skill-card-header"><span class="skill-card-icon">🛠️</span><h4>Tools &amp; Platforms</h4></div>
           <div class="skill-divider"></div>
           <div class="skill-tags">
             <span class="skill-tag">Git &amp; GitHub</span>
@@ -349,10 +305,7 @@
         </div>
 
         <div class="skill-card fade-up" style="transition-delay:0.3s">
-          <div class="skill-card-header">
-            <span class="skill-card-icon">🧠</span>
-            <h4>CS Fundamentals</h4>
-          </div>
+          <div class="skill-card-header"><span class="skill-card-icon">🧠</span><h4>CS Fundamentals</h4></div>
           <div class="skill-divider"></div>
           <div class="skill-tags">
             <span class="skill-tag">Data Structures</span>
@@ -362,7 +315,6 @@
             <span class="skill-tag">LeetCode</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -380,11 +332,13 @@
 
       <div class="projects-grid">
 
-        <!-- Project 1 -->
+        <!-- Project 1: Expense Tracker -->
         <div class="project-card fade-up" style="transition-delay:0.05s">
-          <div class="project-img-placeholder">
-            <span class="project-emoji">💰</span>
-            <span>Expense Tracker Pro</span>
+          <div class="project-img-wrap">
+            <img
+              src="{{ url_for('static', filename='expense_tracker.png') }}"
+              alt="Expense Tracker Pro Screenshot"
+            />
           </div>
           <div class="project-body">
             <div class="project-type">Web Application</div>
@@ -402,11 +356,13 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 2: AI Lead Engine -->
         <div class="project-card fade-up" style="transition-delay:0.12s">
-          <div class="project-img-placeholder">
-            <span class="project-emoji">🤖</span>
-            <span>AI Lead Engine</span>
+          <div class="project-img-wrap">
+            <img
+              src="{{ url_for('static', filename='ai_lead_engine.png') }}"
+              alt="AI Lead Engine - Make.com Webhook Automation"
+            />
           </div>
           <div class="project-body">
             <div class="project-type">AI Automation</div>
@@ -433,7 +389,6 @@
   ══════════════════════════════════════════════ -->
   <section id="contact">
     <div class="container">
-
       <div class="contact-grid">
 
         <!-- Left: Info -->
@@ -486,27 +441,37 @@
         <div class="contact-form-card fade-up" style="transition-delay:0.15s">
           <h3>Send a Message</h3>
 
-          <form id="contactForm">
-            <div class="form-group">
-              <input type="text" class="form-control-custom" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control-custom" name="email" placeholder="Your Email" required />
-            </div>
-            <div class="form-group">
-              <input type="tel" class="form-control-custom" name="phone" placeholder="Phone Number (optional)" />
-            </div>
-            <div class="form-group">
-              <textarea class="form-control-custom" name="message" rows="4" placeholder="Tell me about your project or idea..." required></textarea>
-            </div>
-            <button type="submit" class="btn-send" id="sendBtn">
-              <i class="fas fa-paper-plane"></i>
-              Send Message
-            </button>
-            <div class="form-status" id="formStatus"></div>
-          </form>
-        </div>
+          <!-- Form body (hides on success) -->
+          <div class="form-body" id="formBody">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" class="form-control-custom" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control-custom" name="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control-custom" name="phone" placeholder="Phone Number (optional)" />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control-custom" name="message" rows="4" placeholder="Tell me about your project or idea..." required></textarea>
+              </div>
+              <button type="submit" class="btn-send" id="sendBtn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
 
+          <!-- Success state (shown after send) -->
+          <div class="form-success-overlay" id="successOverlay">
+            <div class="success-checkmark">✅</div>
+            <h4>Message Sent!</h4>
+            <p>Thanks for reaching out, Nishanth will get back to you within 24 hours. 🚀</p>
+            <button class="btn-send-again" onclick="resetForm()">Send Another Message</button>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -531,48 +496,42 @@
        SCRIPTS
   ══════════════════════════════════════════════ -->
   <script>
-    /* ── Navbar scroll + active section highlight ── */
+    /* ── Navbar scroll + active highlight ── */
     const navbar   = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[id]');
 
-    const observer = new IntersectionObserver((entries) => {
+    const sectionObs = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(l => l.classList.remove('active'));
-          const active = document.querySelector(`.nav-link[data-section="${entry.target.id}"]`);
-          if (active) active.classList.add('active');
+          const a = document.querySelector(`.nav-link[data-section="${entry.target.id}"]`);
+          if (a) a.classList.add('active');
         }
       });
     }, { threshold: 0.35 });
 
-    sections.forEach(s => observer.observe(s));
-
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
-    });
+    sections.forEach(s => sectionObs.observe(s));
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40));
 
     /* ── Hamburger ── */
-    const hamburger = document.getElementById('hamburger');
-    const navLinksEl = document.getElementById('navLinks');
-    hamburger.addEventListener('click', () => {
-      navLinksEl.classList.toggle('open');
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
     });
-    navLinksEl.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => navLinksEl.classList.remove('open'));
+    document.getElementById('navLinks').querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
     });
 
-    /* ── Scroll fade-up animations ── */
-    const fadeEls = document.querySelectorAll('.fade-up');
+    /* ── Fade-up on scroll ── */
     const fadeObs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); }
       });
-    }, { threshold: 0.12 });
-    fadeEls.forEach(el => fadeObs.observe(el));
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => fadeObs.observe(el));
 
     /* ── Contact form → Make.com webhook ── */
-    const WEBHOOK_URL = 'https://hook.eu2.make.com/YOUR_WEBHOOK_URL_HERE';
+    const WEBHOOK_URL = 'https://hook.eu1.make.com/29t2vbq1flngv5amko8ukrgyibjr6ps3';
 
     document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -586,13 +545,15 @@
       status.style.display = 'none';
 
       const payload = {
-        name:    form.name.value,
-        email:   form.email.value,
-        phone:   form.phone.value || 'Not provided',
-        message: form.message.value,
-        source:  'Portfolio Contact Form',
+        name:      form.name.value,
+        email:     form.email.value,
+        phone:     form.phone.value || 'Not provided',
+        message:   form.message.value,
+        source:    'Portfolio Contact Form',
         timestamp: new Date().toISOString()
       };
+
+      let success = false;
 
       try {
         const res = await fetch(WEBHOOK_URL, {
@@ -600,35 +561,37 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
-
-        if (res.ok) {
-          status.className = 'form-status success';
-          status.textContent = '✅ Message sent! I\'ll get back to you soon.';
-          form.reset();
-        } else {
-          throw new Error('Network response was not ok');
-        }
-      } catch (err) {
-        // Fallback: send via Flask route
+        if (res.ok) success = true;
+      } catch (_) {
+        // Fallback to Flask
         try {
-          const formData = new FormData(form);
-          const flaskRes = await fetch('/contact', { method: 'POST', body: formData });
-          const data     = await flaskRes.json();
-
-          if (data.status === 'success') {
-            status.className = 'form-status success';
-            status.textContent = '✅ Message sent! I\'ll get back to you soon.';
-            form.reset();
-          } else throw new Error(data.message);
-        } catch (flaskErr) {
-          status.className = 'form-status error';
-          status.textContent = '❌ Something went wrong. Please email me directly.';
-        }
+          const fd = new FormData(form);
+          const r  = await fetch('/contact', { method: 'POST', body: fd });
+          const d  = await r.json();
+          if (d.status === 'success') success = true;
+        } catch (__) {}
       }
 
-      btn.disabled = false;
-      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      if (success) {
+        // Show beautiful success state
+        document.getElementById('formBody').classList.add('hidden');
+        document.getElementById('successOverlay').classList.add('show');
+        form.reset();
+      } else {
+        status.className = 'form-status error';
+        status.textContent = '❌ Something went wrong. Please email me directly at nishanthmanju.p@gmail.com';
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      }
     });
+
+    /* ── Reset form (Send Another) ── */
+    function resetForm() {
+      document.getElementById('formBody').classList.remove('hidden');
+      document.getElementById('successOverlay').classList.remove('show');
+      document.getElementById('sendBtn').disabled = false;
+      document.getElementById('sendBtn').innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    }
   </script>
 
 </body>

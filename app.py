@@ -3,7 +3,6 @@ import requests
 
 app = Flask(__name__)
 
-# Replace with your actual Make.com webhook URL
 MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/29t2vbq1flngv5amko8ukrgyibjr6ps3"
 
 @app.route('/')
