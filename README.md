@@ -1,4 +1,3 @@
-# nishanth-portfolio
 # AI-Powered Full-Stack Portfolio 🚀
 
 A modern, high-performance portfolio website built with **Flask** and **Bootstrap 5**, featuring a custom-built **AI Automation Engine** for lead management.
