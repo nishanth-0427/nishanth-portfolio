@@ -14,8 +14,9 @@ def contact():
     data = {
         "name": request.form.get('name'),
         "email": request.form.get('email'),
-        "phone": request.form.get('phone', ''),
+        "phone": request.form.get('phone', 'Not provided'),
         "message": request.form.get('message'),
+        "source": "Portfolio Contact Form",
     }
     try:
         response = requests.post(MAKE_WEBHOOK_URL, json=data, timeout=10)
